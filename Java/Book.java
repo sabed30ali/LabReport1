@@ -31,7 +31,7 @@ class printbook extends Book{
         this.pagecount = pagecount;
     }
     double pricecell(){
-        return price + pagecount * 0.5;
+        return price + pagecount * 2;
     }
 }
 class main{
