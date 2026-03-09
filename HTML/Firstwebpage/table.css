@@ -1,0 +1,18 @@
+.pricing {
+width:100%;
+border-collapse:collapse;
+background:#fff;
+border-radius:12px;
+overflow:hidden;
+}
+.pricing th, .pricing td {
+padding:16px 20px;
+text-align:left;
+}
+.pricing thead {
+background:#04AA6D;
+color:#fff;
+}
+.pricing tbody tr:nth-child(even) {
+background:#f9fafb;
+}
