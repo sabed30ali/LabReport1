@@ -6,7 +6,7 @@ public class BillinputandOutput {
     Electricitybill eb = new Electricitybill();
     System.out.println("Enter Consumer Number: ");
     eb.ConsumerNO = sc.nextInt();
-    sc.nextLine();
+    sc.nextLine();// Consume the newline character left by nextInt()
     System.out.println("Enter Consumer Name: ");
     eb.ConsumerName = sc.nextLine();
     System.out.println("Enter Previous Month's Reading: ");

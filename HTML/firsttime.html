@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Time Html</title>
+    <style>
+        a:link{
+            color: green;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        This is my first time to learn HTML. I am very excited to learn this language. 
+        I hope I will be able to create some amazing websites in the future. 
+        I will try my best to learn this language and use it to create some amazing projects.
+    </p>
+    <pre>
+        This is a preformatted text. It preserves both spaces and line breaks.
+
+        It is useful for displaying code or any text where formatting is important.
+
+        You can use it to display HTML code, as shown below:
+    </pre>
+    <blockquote>
+        <p>This is a blockquote. It is used to indicate that the enclosed text is an extended quotation.</p>
+        <p>Blockquotes are typically indented and may have a different font style to distinguish them from the main content.</p>
+    </blockquote>
+    <p>
+        I am looking forward to learning more about HTML and creating some amazing websites in the future.
+        I will try my best to learn this language and use it to create some amazing projects.
+        <q>This is an inline quotation. It is used to indicate that the enclosed text is a quotation from another source.</q>
+        I will try my best to learn this language and use it to create some amazing projects.
+        </q>
+    </p>
+    <p> The <abbr title="HyperText Markup Language"> HTML </abbr> ikhjhjhkjhkjjhjhjhkh</p>
+    The Order list:
+    <ol>
+        <li>Learn HTML basics</li>
+        <li>Practice writing HTML code</li>
+        <li>Build simple websites</li>
+    </ol>
+    The Unordered list:
+    <ul>
+        <li>Learn HTML basics</li>
+        <li>Practice writing HTML code</li>
+        <li>Build simple websites</li>
+    </ul>
+    The data list:
+    <dl>
+        <dt>HTML</dt><!-- Description of HTML. -->
+        <dd>HyperText Markup Language</dd><!--dd mean definition description -->
+        <dt>CSS</dt><!--dt mean definition term -->
+        <dd>Cascading Style Sheets</dd>
+        <dt>JS</dt>
+        <dd>JavaScript</dd>
+    </dl>
+    The image:
+    <img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="Trulli" width="500" height="333" usemap="#mapping">
+    <map name="mapping">
+        <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://www.w3schools.com/html/default.asp">
+        <area shape="circle" coords="337,300,44" alt="Phone" href="https://www.w3schools.com/css/default.asp">
+        <area shape="poly" coords="290,172,333,250,300,300" alt="Tablet" href="https://www.w3schools.com/js/default.asp">
+    </map>
+    <a href="first.html"><img src="desktop-design.jpg" alt="new desktop design" width="500" height="333"> Assingnment</a>
+    <table>
+        <caption>My Academic Records</caption>
+        <thead>
+            <tr>
+                <th>University/College</th>
+                <th>Degree</th>
+                <th>Passing Year</th>
+                <th>CGVA</th>
+                <th>Borad</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Premeir University</td>
+                <td>Bachelor of Cse</td>
+                <td>2024</td>
+                <td>3.50</td>
+                <td rowspan="3"> Chattogram</td>
+            </tr>
+            <tr>
+                <td>Chittagong College</td>
+                <td>Higher Secondary Certificate</td>
+                <td>2020</td>
+                <td>3.75</td>
+            </tr>
+            <tr>
+                <td>Chittagong Collegiate School</td>
+                <td>Secondary School Certificate</td>
+                <td>2018</td>
+                <td>4.00</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <form action="login file">
+        <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="example@gmail.com" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+        <input type="submit" value="Login">
+        <br><br>
+        </div>
+        <div>
+            Favorite Color:
+            <input type="radio" value="red" name="color"> Red
+            <input type="radio" value="blue" name="color"> Blue
+            <input type="radio" value="green" name="color"> Green
+            <input type="radio" value="others" name="color"> others
+        </div>
+        <div>
+            <input type="country" list="countries" placeholder="Select your country">
+            <datalist id="countries">
+                <option value="Bangladesh">Ban </option>
+                <option value="India"> Ind</option>
+                <option value="Pakistan"> Pak</option>
+                <option value="Nepal"> Nep</option>
+                <option value="Bhutan"> Bhu</option>
+            </datalist>
+        </div>
+    </form>
+    <fieldset>
+    <legend>Choose Your Favorite Programming Language</legend>
+    <input type="checkbox" id="html" name="language" value="HTML">
+    <label for="html">HTML</label><br>
+    <input type="checkbox" id="css" name="language" value="CSS">
+    <label for="css">CSS</label><br>
+    <input type="checkbox" id="javascript" name="language" value="JavaScript
+    ">
+    <label for="javascript">JavaScript</label><br>
+    </fieldset>
+    <select name="subject" id="code">
+    <option value="">---Select One---</option>
+    <option value="html">HTML</option>
+    <option value="css">CSS</option>
+    <option value="javascript">JavaScript</option>
+    </select>
+    
+</body>
+</html>

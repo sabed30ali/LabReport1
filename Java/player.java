@@ -2,7 +2,8 @@ package Java;
 
 public class player {
     public int run =0;
-    public static int teamrun =0;
+    public static int teamrun =0;// static variable is shared by all objects of the class. if we change the value of static variable in one object,
+                                //  it will change for all objects of the class.
     public void hit_four(){
         run =run +4;
         teamrun +=4;

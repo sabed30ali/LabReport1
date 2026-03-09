@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 20px auto; padding: 20px; }
+        h1 { color: rgb(44, 62, 80); border-bottom: 2px solid #3498db; }
+        .required { color: red; }
+        .form-group { margin-bottom: 15px; }
+        .inline-group { display: flex; gap: 10px; }
+        input[type="text"], input[type="email"], input[type="tel"], input[type="number"], select { 
+            width: 100%; padding: 8px; margin-top: 5px; 
+        }
+        fieldset { margin: 20px 0; padding: 15px; border: 1px solid #ddd; }
+        legend { font-weight: bold; padding: 0 10px; }
+    </style>
+</head>
+<body>
+    <form action="#" method="POST">
+        <h1>Student Registration Form</h1>
+        <p>Please Enter Relevant Information<span class="required">*</span> Mandatory Field</p>
+
+        <fieldset>
+            <legend>Personal Information</legend>
+            
+            <div class="form-group">
+                <label>District (Institute District: Where you want to do your course)<span class="required">*</span></label>
+                <select required>
+                    <option value="">Select One</option>
+                    <!-- Add district options here -->
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Course<span class="required">*</span></label>
+                <select required>
+                    <option value="">Select One</option>
+                    <!-- Add course options here -->
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Student Name<span class="required">*</span></label>
+                <input type="text" required>
+            </div>
+
+            <div class="form-group">
+                <label>Father Name<span class="required">*</span></label>
+                <input type="text" required>
+            </div>
+
+            <div class="form-group">
+                <label>Mother Name<span class="required">*</span></label>
+                <input type="text" required>
+            </div>
+
+            <div class="form-group">
+                <label>Date of Birth<span class="required">*</span></label>
+                <div class="inline-group">
+                    <input type="number" placeholder="Day" min="1" max="31" required>
+                    <select required>
+                        <option value="">Month</option>
+                        <!-- Add months here -->
+                    </select>
+                    <input type="number" placeholder="Year" min="1900" max="2023" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Gender<span class="required">*</span></label>
+                <label><input type="radio" name="gender" value="male" required> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+            </div>
+
+            <div class="form-group">
+                <label>Physically Handicapped<span class="required">*</span></label>
+                <label><input type="radio" name="handicapped" value="yes" required> Yes</label>
+                <label><input type="radio" name="handicapped" value="no"> No</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact Information</legend>
+            <div class="form-group">
+                <label>Email Address<span class="required">*</span></label>
+                <input type="email" placeholder="example@mail.com" required>
+            </div>
+
+            <div class="form-group">
+                <label>Phone (Must be 11 Digits)<span class="required">*</span></label>
+                <input type="tel" pattern="[0-9]{11}" placeholder="01551234567" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Identification Details</legend>
+            <div class="form-group">
+                <label>Identification Type<span class="required">*</span></label>
+                <select required>
+                    <option value="">Select One</option>
+                    <!-- Add ID types here -->
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Identification No.<span class="required">*</span></label>
+                <input type="text" pattern="\d{10}|\d{17}|(\d{4}\d{13})" 
+                title="10, 17 digits or 13 digits with year prefix" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Address Information</legend>
+            <div class="form-group">
+                <label>Home District<span class="required">*</span></label>
+                <select required>
+                    <option value="">Select One</option>
+                    <!-- Add districts here -->
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Upsaila<span class="required">*</span></label>
+                <select required>
+                    <option value="">Select One</option>
+                    <!-- Add upazila options here -->
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Village/House No./Road No./Other Alternative<span class="required">*</span></label>
+                <input type="text" required>
+            </div>
+
+            <div class="form-group">
+                <label>Post Office<span class="required">*</span></label>
+                <input type="text" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Information</legend>
+            <div class="form-group">
+                <label>Educational Qualification (Higher Level)<span class="required">*</span></label>
+                <select required>
+                    <option value="">Select One</option>
+                    <!-- Add qualifications here -->
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Have any computer?<span class="required">*</span></label>
+                <label><input type="radio" name="computer" value="yes" required> Yes</label>
+                <label><input type="radio" name="computer" value="no"> No</label>
+            </div>
+
+            <div class="form-group">
+                <label>Photograph<span class="required">*</span></label>
+                <input type="file" accept="image/jpeg, image/png, image/jpg" required>
+                <small>File type: jpg/jpeg/png. Max size: 2MB</small>
+            </div>
+
+            <div class="form-group">
+                <label>Signature<span class="required">*</span></label>
+                <input type="file" accept="image/jpeg, image/png, image/jpg" required>
+                <small>File type: jpg/jpeg/png. Max size: 2MB</small>
+            </div>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
